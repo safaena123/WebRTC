@@ -1,7 +1,15 @@
 navigator.getUserMedia = navigator.getUserMedia
 || navigator.webkitGetUserMedia
 || navigator.mozGetUserMedia;
-var constraints = {audio: false, video: true};
+var constraints = {audio: true, 
+                    video: { width: {
+                        min: 320,
+                        max: 1280
+                    },
+                    height: {
+                        min: 240,
+                        max: 720
+                    }}};
 var video = document.querySelector("video");
 function successCallback(stream) {
     window.stream = stream;
