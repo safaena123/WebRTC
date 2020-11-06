@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>getUserMedia very simple demo</title>
+<title>DataChannel simple example</title>
 </head>
 <body>
-    <div id="mainDiv">
-        <h1>Exemple de <code> getUserMedia()</code> </h1>
-        <p> Il s’agit d’appeler <code>getUserMedia()</code> et d’afficher le resultat en utilisant la balise HTML5 <video> </p>
-        <p> Examiner les codes sources HTML et JavaScript ...</p>
-        <video autoplay></video>
-        <script src="js/getUserMedia.js"></script>
-    </div>
+<textarea rows="5" cols="50" id="dataChannelSend" disabled placeholder="
+1: Press Start; 2: Enter text; 3: Press Send."></textarea>
+<textarea rows="5" cols="50" id="dataChannelReceive" disabled></textarea>
+<div id="buttons">
+<button id="startButton">Start</button>
+<button id="sendButton">Send</button>
+<button id="closeButton">Stop</button>
+</div>
+<script src="js/dataChannel.js"></script>
 </body>
 </html>
