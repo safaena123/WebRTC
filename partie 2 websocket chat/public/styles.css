@@ -5,10 +5,10 @@ body{
 h2{
     font-size: 18px;
     padding: 10px 20px;
-    color: #575ed8;
+    color: #1fb419;
 }
 
-#mario-chat{
+#SUD-chat{
     max-width: 600px;
     margin: 30px auto;
     border: 1px solid #ddd;
@@ -17,7 +17,7 @@ h2{
 }
 
 #chat-window{
-    height: 400px;
+    height: 350px;
     overflow: auto;
     background: #f9f9f9;
 }
@@ -36,7 +36,7 @@ h2{
 }
 
 #output strong{
-    color: #575ed8;
+    color: hsl(130, 78%, 47%);
 }
 
 label{
@@ -59,7 +59,7 @@ input{
 }
 
 button{
-    background: #575ed8;
+    background: #1fb419;
     color: #fff;
     font-size: 18px;
     border: 0;
